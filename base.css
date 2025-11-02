@@ -1,0 +1,102 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    min-height: 100vh;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+header {
+    background: #252525;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+header span {
+    color: #f9d923;
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background: #333;
+    flex-wrap: wrap;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    flex: 1 1 auto;
+    text-align: center;
+}
+nav a:hover {
+    background: #555;
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    flex: 1;
+    width: 100%;
+}
+.card {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+}
+.card h2 {
+    text-align: center;
+    background: #252525;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px 5px 0 0;
+}
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.about-content img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 5px;
+}
+footer {
+    text-align: center;
+    background: #252525;
+    color: white;
+    padding: 1rem 0;
+    margin-top: auto;
+    width: 100%;
+}
+footer span {
+    color: #f9d923;
+}
+ul {
+    list-style: disc inside;
+    padding-left: 1rem;
+}
+a {
+    color: #001aff;
+}
+a:hover {
+    text-decoration: underline;
+}
+.flag {
+    width: 100px;
+}
+.location-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    border-top: 1px solid #ccc;
+    padding-top: 1rem;
+}
