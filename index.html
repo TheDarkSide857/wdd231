@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Biz United USA</title>
+        <meta name="description" content="Biz United USA, Home Page">
+        <meta name="author" content="Dallin Thomas Stewart">
+        <link rel="stylesheet" href="styles/base.css">
+        <script src="scripts/getdates.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <img src="images/sitelogo.webp" width="100">
+            <h1>Biz United USA - <span>Dallin Stewart</span></h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Chamber</a>
+                <a href="#">Final</a>
+            </nav>
+        </header>
+        <main>
+            <section class="card">
+                <h2>About Me</h2>
+                <div class="about-content">
+                  <div>
+                    <p>Hello! My name is Dallin Stewart. I am from Pacific Grove, California and I am currently learning web development through BYU-Idaho. I enjoy simply browsing the web, but I have trained in coding and communications managing, so I might have some useful skills to provide. I am the youngest of five children and I am currently working in college. hope to learn a lot from this course and secure my future using the advice provided.</p>
+                  </div>
+                </div>
+              </section>
+              <section class="card">
+                <h2>My Photo</h2>
+                <ul>
+                  <img src="images/profile.webp" alt="Hello, my name is Dallin Stewart" width="200">
+                </ul>
+              </section>
+        </main>
+        <section class="card2">
+          <h2>Web Certificate Courses</h2>
+          <nav id="filter-nav">
+            <a href="#" class="active" data-filter="all">All</a>
+            <a href="#" data-filter="CSE">CSE</a>
+            <a href="#" data-filter="WDD">WDD</a>
+          </nav>
+      
+          <div id="courses-container" class="courses-grid"></div>
+          <div id="total-credits" class="total-credits"></div>
+        </section>
+        <footer>
+          <p>
+            &copy; <span id="currentyear"></span> Dallin Stewart, US
+            <p id="lastModified"></p>
+          </p>
+        </footer>
+    </body>
+</html>
