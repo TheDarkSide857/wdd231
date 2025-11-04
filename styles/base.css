@@ -69,27 +69,6 @@ main {
     padding: 0.5rem;
     border-radius: 5px 5px 0 0;
 }
-.card2 {
-    display: grid;
-    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 2rem;
-    max-width: 1165px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-    flex: 1;
-    width: 100%;
-    background: #a6cffd;
-    border: 1px solid #f9d923;
-    border-radius: 5px;
-    padding: 1rem;
-}
-.card2 h2 {
-    text-align: center;
-    background: #0a3e66;
-    color: white;
-    padding: 0.5rem;
-    border-radius: 5px 5px 0 0;
-}
 .about-content {
     display: flex;
     align-items: flex-start;
