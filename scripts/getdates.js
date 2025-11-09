@@ -87,13 +87,13 @@ const courses = [
         category: 'web'
     }
 ];
-const coursesContainer = document.getElementById('courses-container');
-const totalCreditsEl = document.getElementById('total-credits');
-const filterButtons = document.querySelectorAll('#filter-nav a');
-function renderCourses(filter = 'all') {
-    const filteredCourses = filter === 'all'
-        ? courses
-        : courses.filter(course => course.subject === filter);
+    const coursesContainer = document.getElementById('courses-container');
+    const totalCreditsEl = document.getElementById('total-credits');
+    const filterButtons = document.querySelectorAll('#filter-nav a');
+    function renderCourses(filter = 'all') {
+    const filteredCourses = filter === 'all' 
+      ? courses 
+      : courses.filter(course => course.subject === filter);
     coursesContainer.innerHTML = filteredCourses.map(course => `
       <div class="course-card ${course.completed ? 'completed' : ''}">
         <div class="course-code">${course.subject} ${course.number}</div>
@@ -104,14 +104,14 @@ function renderCourses(filter = 'all') {
     const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
     totalCreditsEl.textContent = `Total Credits: ${totalCredits}`;
     filterButtons.forEach(btn => {
-        btn.classList.toggle('active', btn.dataset.filter === filter);
+      btn.classList.toggle('active', btn.dataset.filter === filter);
     });
-}
-filterButtons.forEach(button => {
+  }
+  filterButtons.forEach(button => {
     button.addEventListener('click', (e) => {
-        e.preventDefault();
-        const filter = button.dataset.filter;
-        renderCourses(filter);
-    });
+      e.preventDefault();
+      const filter = button.dataset.filter;
+      renderCourses(filter);
+  });
 });
-renderCourses();
+  renderCourses();

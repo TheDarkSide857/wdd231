@@ -97,6 +97,7 @@ ul {
 }
 a {
     color: #00c3ff;
+    text-decoration: none;
 }
 a:hover {
     text-decoration: underline;
@@ -126,7 +127,7 @@ a:hover {
     transition: transform 0.2s, box-shadow 0.2s;
 }
 .course-card:hover {
-    background: #0069d2;
+background: #0069d2;
     transform: translateY(-4px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
@@ -172,7 +173,7 @@ a:hover {
 @media (max-width: 768px) {
     nav {
         grid-template-columns: 1fr;
-        gap: 10px;
+gap: 10px;
     }
     main {
         grid-template-columns: 1fr;
