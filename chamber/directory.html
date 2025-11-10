@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Biz United USA - Directory of Members</title>
+    <meta name="description" content="Welcome to Biz United USA. Here you can learn about the United States' trade, commerce, and more!">
+    <meta name="author" content="Dallin Stewart">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/directory.css">
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+  </head>
+  <body>
+    <header>
+        <div class="top-bar">
+            <div class="logo">
+                <img src="images/sitelogo.webp" width="100" alt="Biz United USA">
+                <h1>Biz United USA - <span>Chamber Page</span></h1>
+            </div>
+            <nav>
+                <a href="https://thedarkside857.github.io/wdd231/">Home</a>
+                <a href="#">Directory</a>
+                <a href="#">Join</a>
+                <a href="#">Discover</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+    <section class="hero">
+        <div class="hero-image">
+            <img src="images/hero.jpg" alt="Hero Image"/>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2>Welcome to Biz United USA</h2>
+            <p>Here you can learn about various businesses based in the United States, their trade and commerce, and more!</p>
+            <a href="#" class="btn">Keynote Tickets</a>
+        </div>
+    </section>
+    <main class="container">
+        <h2 class="section-title">Home</h2>
+        <div class="grid">
+            <section class="card">
+                <h2>Events</h2>
+                <p>Stay updated with upcoming business networking and community events.</p>
+            </section>
+            <section class="card">
+                <h2>Current Weather</h2>
+                <div class="weather-icon">
+                    <i class="fas fa-cloud-sun"></i>
+                </div>
+                <div class="temp">75°F</div>
+                <p>Partly Cloudy</p>
+                <ul class="weather-details">
+                    <li>High: 85°F</li>
+                    <li>Low: 52°F</li>
+                    <li>Humidity: 34%</li>
+                    <li>Sunrise: 7:30am</li>
+                    <li>Sunset: 9:59pm</li>
+                </ul>
+            </section>
+            <section class="card">
+                <h2>Weather Forecast</h2>
+                <ul class="forecast-list">
+                    <li><strong>Today:</strong> 90°F</li>
+                    <li><strong>Wednesday:</strong> 89°F</li>
+                    <li><strong>Thursday:</strong> 68°F</li>
+                </ul>
+            </section>
+        </div>
+        <section class="directory-spotlight">
+            <h3 class="section-title">Featured Members</h3>
+            <div class="grid" id="members">
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-info">
+                <h4>Biz United USA</h4>
+                <p>1321 Lincoln Avenue<br>Pacific Grove, California</p>
+                <p><a href="mailto:info@bizunitedusa.org">info@bizunitedusa.org</a></p>
+                <p>(831) 601-5459</p>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="footer-meta">
+                <p>WDD231 Class Project</p>
+                <p><span>Dallin Stewart</span></p>
+                <p>&copy; <span id="currentyear"></span> United States</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
