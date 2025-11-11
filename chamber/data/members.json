@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "Biz United USA",
+            "address": "1321 Lincoln Avenue, Pacific Grove, CA",
+            "phone": "800-555-1234",
+            "url": "https://bizunitedusa.org",
+            "logo": "images/sitelogo.webp",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name": "Rosetta Co.",
+            "address": "456 Silicon Valley Blvd, San Jose, CA",
+            "phone": "800-555-5678",
+            "url": "https://rosettaco.com",
+            "logo": "images/rosettaco.jpeg",
+            "membershipLevel": "Member"
+        },
+        {
+            "name": "GreenEarth",
+            "address": "789 Greenway Drive, Portland, OR",
+            "phone": "800-555-9101",
+            "url": "https://greenearth.org",
+            "logo": "images/greenearth.jpeg",
+            "membershipLevel": "Silver"
+        },
+        {
+            "name": "RentisWave",
+            "address": "123 Sunshine Street, Miami, FL",
+            "phone": "800-555-1122",
+            "url": "https://rentiswave.com",
+            "logo": "images/rentiswave.jpeg",
+            "membershipLevel": "Member"
+        },
+        {
+            "name": "Omnitech United",
+            "address": "987 Innovation Lane, Austin, TX",
+            "phone": "800-555-3344",
+            "url": "https://omnitechunited.com",
+            "logo": "images/omnitechunited.jpeg",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name": "Fries R Us",
+            "address": "654 Sustainability Ave, Boulder, CO",
+            "phone": "800-555-5566",
+            "url": "https://friesrus.org",
+            "logo": "images/friesrus.jpeg",
+            "membershipLevel": "Silver"
+        },
+        {
+            "name": "NexusFlights",
+            "address": "321 Future Blvd, Seattle, WA",
+            "phone": "800-555-7788",
+            "url": "https://nexusflights.com",
+            "logo": "images/nexusflights.jpeg",
+            "membershipLevel": "Gold"
+        }
+    ]
+}
