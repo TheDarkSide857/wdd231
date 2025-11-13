@@ -1,103 +1,59 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Biz United USA - Directory of Members</title>
-    <meta name="description" content="Welcome to Biz United USA. Here you can learn about the United States' trade, commerce, and more!">
-    <meta name="author" content="Dallin Stewart">
-    <meta property="og:title" content="Facebook">
-    <meta property="og:description" content="Discover the world of Facebook and connect with your friends and family. A little connection goes a long way!">
-    <meta property="og:url" content="https://www.facebook.com/">
-    <meta property="og:image" content="https://www.facebookbrand.com/img/fb-art.jpg">
-    <link rel="icon" href="images/favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/directory.css">
-    <script src="scripts/directory.js" defer></script>
-    <script src="scripts/getdates.js" defer></script>
-  </head>
-  <body>
-    <header>
-        <div class="top-bar">
-            <div class="logo">
-                <img src="images/sitelogo.webp" width="100" alt="Biz United USA">
-                <h1>Biz United USA - <span>Chamber Page</span></h1>
-            </div>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Biz United USA - Home Page</title>
+        <meta name="description" content="Welcome to Biz United USA. Here you can learn about the United States' trade, commerce, and more!">
+        <meta name="author" content="Dallin Stewart">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/base.css">
+        <script src="scripts/getdates.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <img src="images/sitelogo.webp" width="100" alt="Biz United USA">
+            <h1>Biz United USA - <span>Dallin Stewart</span></h1>
             <nav>
                 <a href="#">Home</a>
-                <a href="https://thedarkside857.github.io/wdd231/chamber/directory.html">Directory</a>
-                <a href="#">Join</a>
-                <a href="#">Discover</a>
+                <a href="#">Chamber</a>
+                <a href="#">Final</a>
             </nav>
-        </div>
-    </header>
-    <main>
-        <section class="hero">
-            <div class="hero-image">
-                <img src="images/hero.jpg" alt="Hero Image"/>
-            </div>
-            <div class="hero-overlay"></div>
-            <div class="hero-content">
-                <h2>Welcome to Biz United USA</h2>
-                <p>Here you can learn about various businesses based in the United States, their trade and commerce, and more!</p>
-                <a href="#" class="btn">Keynote Tickets</a>
-            </div>
+        </header>
+        <main>
+            <section class="card">
+                <h2>About Me</h2>
+                <div class="about-content">
+                  <div>
+                    <p>Hello! My name is Dallin Stewart. I am from Pacific Grove, California and I am currently learning web development through BYU-Idaho. I enjoy simply browsing the web, but I have trained in coding and communications managing, so I might have some useful skills to provide. I am the youngest of five children and I am currently working in college. hope to learn a lot from this course and secure my future using the advice provided.</p>
+                  </div>
+                </div>
+              </section>
+              <section class="card">
+                <h2>My Photo</h2>
+                <ul>
+                  <img src="images/profile.webp" alt="Hello, my name is Dallin Stewart" width="200">
+                </ul>
+              </section>
+        </main>
+        <section class="card2">
+          <h2>Web Certificate Courses</h2>
+          <nav id="filter-nav">
+            <a href="#" class="active" data-filter="all">All</a>
+            <a href="#" data-filter="CSE">CSE</a>
+            <a href="#" data-filter="WDD">WDD</a>
+          </nav>
+      
+          <div id="courses-container" class="courses-grid"></div>
+          <div id="total-credits" class="total-credits"></div>
         </section>
-        <section class="container">
-            <h2 class="section-title">Home</h2>
-            <div class="grid">
-                <section class="card">
-                    <h2>Events</h2>
-                    <p>Stay updated with upcoming business networking and community events.</p>
-                </section>
-                <section class="card">
-                    <h2>Current Weather</h2>
-                    <div class="weather-icon">
-                        <i class="fas fa-cloud-sun"></i>
-                    </div>
-                    <div class="temp">75°F</div>
-                    <p>Partly Cloudy</p>
-                    <ul class="weather-details">
-                        <li>High: 85°F</li>
-                        <li>Low: 52°F</li>
-                        <li>Humidity: 34%</li>
-                        <li>Sunrise: 7:30am</li>
-                        <li>Sunset: 9:59pm</li>
-                    </ul>
-                </section>
-                <section class="card">
-                    <h2>Weather Forecast</h2>
-                    <ul class="forecast-list">
-                        <li><strong>Today:</strong> 90°F</li>
-                        <li><strong>Wednesday:</strong> 89°F</li>
-                        <li><strong>Thursday:</strong> 68°F</li>
-                    </ul>
-                </section>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="footer-grid">
-            <div class="footer-info">
-                <h4>Biz United USA</h4>
-                <p>1321 Lincoln Avenue<br>Pacific Grove, California</p>
-                <p><a href="mailto:info@bizunitedusa.org">info@bizunitedusa.org</a></p>
-                <p>(831) 601-5459</p>
-            </div>
-            <div class="footer-social">
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-x-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-            </div>
-            <div class="footer-meta">
-                <p>WDD231 Class Project</p>
-                <p><span>Dallin Stewart</span></p>
-                <p>&copy; <span id="currentyear"></span> United States</p>
-                <p id="lastModified"></p>
-            </div>
-        </div>
-    </footer>
-  </body>
+        <footer>
+          <p>
+            &copy; <span id="currentyear"></span> Dallin Stewart, US
+            <p id="lastModified"></p>
+          </p>
+        </footer>
+    </body>
 </html>

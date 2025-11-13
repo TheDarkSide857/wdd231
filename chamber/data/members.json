@@ -14,7 +14,7 @@
             "phone": "800-555-5678",
             "url": "https://rosettaco.com",
             "logo": "images/rosettaco.jpeg",
-            "membershipLevel": "Member"
+            "membershipLevel": "Bronze"
         },
         {
             "name": "GreenEarth",
@@ -30,7 +30,7 @@
             "phone": "800-555-1122",
             "url": "https://rentiswave.com",
             "logo": "images/rentiswave.jpeg",
-            "membershipLevel": "Member"
+            "membershipLevel": "Bronze"
         },
         {
             "name": "Omnitech United",
