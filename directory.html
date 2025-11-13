@@ -26,8 +26,8 @@
                 <h1>Biz United USA - <span>Chamber Page</span></h1>
             </div>
             <nav>
-                <a href="#">Home</a>
-                <a href="https://thedarkside857.github.io/wdd231/chamber/directory.html">Directory</a>
+                <a href="https://thedarkside857.github.io/wdd231/index.html">Home</a>
+                <a href="#">Directory</a>
                 <a href="#">Join</a>
                 <a href="#">Discover</a>
             </nav>
@@ -45,37 +45,18 @@
                 <a href="#" class="btn">Keynote Tickets</a>
             </div>
         </section>
-        <section class="container">
-            <h2 class="section-title">Home</h2>
-            <div class="grid">
-                <section class="card">
-                    <h2>Events</h2>
-                    <p>Stay updated with upcoming business networking and community events.</p>
-                </section>
-                <section class="card">
-                    <h2>Current Weather</h2>
-                    <div class="weather-icon">
-                        <i class="fas fa-cloud-sun"></i>
-                    </div>
-                    <div class="temp">75°F</div>
-                    <p>Partly Cloudy</p>
-                    <ul class="weather-details">
-                        <li>High: 85°F</li>
-                        <li>Low: 52°F</li>
-                        <li>Humidity: 34%</li>
-                        <li>Sunrise: 7:30am</li>
-                        <li>Sunset: 9:59pm</li>
-                    </ul>
-                </section>
-                <section class="card">
-                    <h2>Weather Forecast</h2>
-                    <ul class="forecast-list">
-                        <li><strong>Today:</strong> 90°F</li>
-                        <li><strong>Wednesday:</strong> 89°F</li>
-                        <li><strong>Thursday:</strong> 68°F</li>
-                    </ul>
-                </section>
+        <section class="directory-spotlight">
+            <h3 class="section-title">Featured Members</h3>
+            <div class="menu">
+                <button id="grid">Grid</button>
+                <button id="list">List</button>
             </div>
+            <article class="grid" id="members">
+                <div id="members" class="grid">
+                    <!-- JavaScript will fill this -->
+                    <p class="loading">Loading members…</p>
+                </div>
+            </article>
         </section>
     </main>
     <footer>
