@@ -15,6 +15,7 @@ async function loadMembers() {
     console.error(err);
   }
 }
+
 function renderMembers(members) {
   membersEl.innerHTML = '';
 
@@ -46,11 +47,28 @@ gridBtn.addEventListener('click', () => {
   gridBtn.classList.add('active');
   listBtn.classList.remove('active');
 });
+
 listBtn.addEventListener('click', () => {
   membersEl.classList.remove('grid');
   membersEl.classList.add('list');
   listBtn.classList.add('active');
   gridBtn.classList.remove('active');
+});
+document.addEventListener('DOMContentLoaded', () => {
+  const mobileToggle = document.querySelector('.mobile-toggle');
+  const mobileNav    = document.querySelector('.mobile-nav');
+
+  mobileToggle.addEventListener('click', () => {
+    mobileNav.classList.toggle('active');
+    mobileToggle.classList.toggle('open');
+  });
+
+  mobileNav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileNav.classList.remove('active');
+      mobileToggle.classList.remove('open');
+    });
+  });
 });
 function escapeHtml(text) {
   const div = document.createElement('div');
@@ -59,19 +77,3 @@ function escapeHtml(text) {
 }
 loadMembers();
 gridBtn.classList.add('active');
-
-    document.addEventListener('DOMContentLoaded', () => {
-    const mobileToggle = document.querySelector('.mobile-toggle');
-    const mobileNav = document.querySelector('.mobile-nav');
-
-    mobileToggle.addEventListener('click', () => {
-        mobileNav.classList.toggle('active');
-        mobileToggle.classList.toggle('open');
-    });
-    document.querySelectorAll('.mobile-nav a').forEach(link => {
-        link.addEventListener('click', () => {
-            mobileNav.classList.remove('active');
-            mobileToggle.classList.remove('open');
-        });
-    });
-});
