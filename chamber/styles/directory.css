@@ -125,29 +125,8 @@ a:hover {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1rem;
 }
-.grid .member-card {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    text-align: center;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-}
 .list {
     display: block;
-}
-.list .member-card {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    border: 1px solid #ccc;
-    padding: 1rem;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-}
-.list .member-card img {
-    width: 100px;
-    height: auto;
-    border-radius: 50%;
 }
 .card {
     background: #a6cffd;
@@ -227,17 +206,10 @@ footer {
     flex-direction: column;
     gap: 1rem;
   }
-  #members.list .member-card {
+  .member-card {
     display: flex;
     align-items: center;
     gap: 1rem;
-  }
-  #members.list .member-card img {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-  }
-  .member-card {
     background: #a6cffd;
     border-radius: 8px;
     overflow: hidden;
