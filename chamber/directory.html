@@ -4,90 +4,82 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Biz United USA - Directory of Members</title>
-    <meta name="description" content="Welcome to Biz United USA. Here you can learn about the United States' trade, commerce, and more!">
-    <meta name="author" content="Dallin Stewart">
+    <meta name="description" content="Directory of member businesses in the Biz United USA chamber of commerce.">
     <meta property="og:title" content="Biz United USA - Chamber Directory">
-    <meta property="og:description" content="Discover member businesses of Biz United USA.">
-    <meta property="og:url" content="https://thedarkside857.github.io/wdd231/directory.html">
-    <meta property="og:image" content="images/hero.jpg">
+    <meta property="og:description" content="Discover member businesses across the United States.">
+    <meta property="og:url" content="https://thedarkside857.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://thedarkside857.github.io/wdd231/chamber/images/sitelogo.webp">
+    <meta property="og:type" content="website">
     <link rel="icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-          integrity="sha512-…"
-          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/directory.css">
     <script src="scripts/directory.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
   </head>
-
+</html>
   <body>
     <header>
-      <div class="top-bar container">
-        <div class="logo">
-          <img src="images/sitelogo.webp" width="100" alt="Biz United USA">
-          <h1>Biz United USA - <span>Chamber Page</span></h1>
+        <div class="top-bar">
+            <div class="logo">
+                <img src="images/sitelogo.webp" width="100" alt="Biz United USA">
+                <h1>Biz United USA - <span>Chamber Page</span></h1>
+            </div>
+            <nav>
+                <a href="https://thedarkside857.github.io/wdd231/chamber/index.html">Home</a>
+                <a href="https://thedarkside857.github.io/wdd231/index.html">Profile</a>
+                <a href="#">Join</a>
+                <a href="#">Discover</a>
+            </nav>
         </div>
-        <nav class="desktop-nav">
-          <a href="https://thedarkside857.github.io/wdd231/index.html">Home</a>
-          <a href="directory.html">Directory</a>
-          <a href="join.html">Join</a>
-          <a href="discover.html">Discover</a>
-        </nav>
-        <button class="mobile-toggle" aria-label="Menu">Menu</button>
-      </div>
-      <nav class="mobile-nav">
-        <a href="https://thedarkside857.github.io/wdd231/index.html">Home</a>
-        <a href="directory.html">Directory</a>
-        <a href="join.html">Join</a>
-        <a href="discover.html">Discover</a>
-      </nav>
     </header>
-    <main class="container">
-      <section class="hero">
-        <div class="hero-image">
-          <img src="images/hero.jpg" alt="Biz United USA hero">
-        </div>
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-          <h1>Welcome to Biz United USA</h1>
-          <p>Here you can learn about various businesses based in the United States, their trade and commerce, and more!</p>
-          <a href="#" class="btn">Keynote Tickets</a>
-        </div>
-      </section>
-      <section class="directory-spotlight">
-        <h2 class="section-title">Featured Members</h2>
-        <div class="menu">
-          <button id="grid">Grid</button>
-          <button id="list">List</button>
-        </div>
-        <article id="members" class="grid">
-          <p class="loading">Loading members…</p>
-        </article>
-      </section>
+    <main>
+        <section class="hero">
+            <div class="hero-image">
+                <img src="images/hero.jpg" alt="Hero Image"/>
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h2>Welcome to Biz United USA</h2>
+                <p>Here you can learn about various businesses based in the United States, their trade and commerce, and more!</p>
+                <a href="#" class="btn">Keynote Tickets</a>
+            </div>
+        </section>
+        <section class="container">
+            <section class="directory-spotlight">
+                <h3 class="section-title">Featured Members</h3>
+                <div class="menu">
+                    <button id="grid">Grid</button>
+                    <button id="list">List</button>
+                </div>
+                <article class="grid" id="members">
+                    <!-- Member profiles will be dynamically inserted here -->
+                    </article>
+        </section>
+</section>
     </main>
     <footer>
-      <div class="footer-grid container">
-        <div class="footer-info">
-          <h4>Biz United USA</h4>
-          <p>1321 Lincoln Avenue<br>Pacific Grove, California</p>
-          <p><a href="mailto:info@bizunitedusa.org">info@bizunitedusa.org</a></p>
-          <p>(831) 601-5459</p>
+        <div class="footer-grid">
+            <div class="footer-info">
+                <h4>Biz United USA</h4>
+                <p>1321 Lincoln Avenue<br>Pacific Grove, California</p>
+                <p><a href="mailto:info@bizunitedusa.org">info@bizunitedusa.org</a></p>
+                <p>(831) 601-5459</p>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="footer-meta">
+                <p>WDD231 Class Project</p>
+                <p><span>Dallin Stewart</span></p>
+                <p>&copy; <span id="currentyear"></span> United States</p>
+                <p id="lastModified"></p>
+            </div>
         </div>
-        <div class="footer-social">
-          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-          <a href="#" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        </div>
-        <div class="footer-meta">
-          <p>WDD231 Class Project</p>
-          <p><span>Dallin Stewart</span></p>
-          <p>&copy; <span id="currentyear"></span> United States</p>
-          <p id="lastModified"></p>
-        </div>
-      </div>
     </footer>
   </body>
 </html>

@@ -1,15 +1,15 @@
 const membersEl = document.getElementById('members');
 const gridBtn   = document.getElementById('grid');
 const listBtn   = document.getElementById('list');
+
 async function loadMembers() {
   try {
     const resp = await fetch('members.json');
     if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-
     const data = await resp.json();
-    if (!Array.isArray(data)) throw new Error('JSON is not an array');
+    if (!Array.isArray(data.members)) throw new Error('JSON is missing members array');
 
-    renderMembers(data);
+    renderMembers(data.members);
   } catch (err) {
     membersEl.innerHTML = `<p class="error">Failed to load members: ${err.message}</p>`;
     console.error(err);
@@ -76,4 +76,40 @@ function escapeHtml(text) {
   return div.innerHTML;
 }
 loadMembers();
-gridBtn.classList.add('active');
+const currentTemp = document.querySelector('#current-temp');
+const weatherIcon = document.querySelector('#weather-icon');
+const captionDesc = document.querySelector('figcaption');
+
+const lat = 36.60297714477723;
+const lon = -121.93294050382472;
+const apiKey = 'cbce0880f8042449729af665c9c94911';
+
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`;
+
+async function apiFetch() {
+  try {
+    const response = await fetch(url);
+    if (response.ok) {
+      const data = await response.json();
+      displayResults(data);
+    } else {
+      throw Error(await response.text());
+    }
+  } catch (error) {
+    console.log(error);
+    captionDesc.textContent = 'Unable to load weather';
+  }
+}
+
+apiFetch();
+
+function displayResults(data) {
+  currentTemp.innerHTML = `${Math.round(data.main.temp)}&deg;F`;
+  const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+  let desc = data.weather[0].description;
+  desc = desc.charAt(0).toUpperCase() + desc.slice(1);
+  weatherIcon.setAttribute('src', iconsrc);
+  weatherIcon.setAttribute('alt', desc);
+  weatherIcon.setAttribute('loading', 'lazy');
+  captionDesc.textContent = desc;
+}

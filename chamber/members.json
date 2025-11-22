@@ -1,0 +1,67 @@
+{
+    "members": [
+      {
+        "name": "Biz United USA",
+        "address": "1321 Lincoln Avenue, Pacific Grove, CA",
+        "phone": "800-555-1234",
+        "website": "https://bizunitedusa.org",
+        "image": "images/sitelogo.webp",
+        "description": "The official chamber connecting businesses across the United States.",
+        "membershipLevel": "Gold"
+      },
+      {
+        "name": "Rosetta Co.",
+        "address": "456 Silicon Valley Blvd, San Jose, CA",
+        "phone": "800-555-5678",
+        "website": "https://rosettaco.com",
+        "image": "images/rosettaco.jpeg",
+        "description": "Cutting-edge language translation and AI solutions.",
+        "membershipLevel": "Bronze"
+      },
+      {
+        "name": "GreenEarth",
+        "address": "789 Greenway Drive, Portland, OR",
+        "phone": "800-555-9101",
+        "website": "https://greenearth.org",
+        "image": "images/greenearth.jpeg",
+        "description": "Sustainable energy and environmental services.",
+        "membershipLevel": "Silver"
+      },
+      {
+        "name": "RentisWave",
+        "address": "123 Sunshine Street, Miami, FL",
+        "phone": "800-555-1122",
+        "website": "https://rentiswave.com",
+        "image": "images/rentiswave.jpeg",
+        "description": "Premium vacation rental management nationwide.",
+        "membershipLevel": "Bronze"
+      },
+      {
+        "name": "Omnitech United",
+        "address": "987 Innovation Lane, Austin, TX",
+        "phone": "800-555-3344",
+        "website": "https://omnitechunited.com",
+        "image": "images/omnitechunited.jpeg",
+        "description": "Full-stack technology solutions and consulting.",
+        "membershipLevel": "Gold"
+      },
+      {
+        "name": "Fries R Us",
+        "address": "654 Sustainability Ave, Boulder, CO",
+        "phone": "800-555-5566",
+        "website": "https://friesrus.org",
+        "image": "images/friesrus.jpeg",
+        "description": "Artisanal french-fry eateries with a focus on local ingredients.",
+        "membershipLevel": "Silver"
+      },
+      {
+        "name": "NexusFlights",
+        "address": "321 Future Blvd, Seattle, WA",
+        "phone": "800-555-7788",
+        "website": "https://nexusflights.com",
+        "image": "images/nexusflights.jpeg",
+        "description": "Next-generation drone delivery and logistics.",
+        "membershipLevel": "Gold"
+      }
+    ]
+  }
