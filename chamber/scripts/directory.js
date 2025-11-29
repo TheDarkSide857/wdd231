@@ -113,3 +113,20 @@ function displayResults(data) {
   weatherIcon.setAttribute('loading', 'lazy');
   captionDesc.textContent = desc;
 }
+const params = new URLSearchParams(window.location.search);
+
+    document.getElementById('out-firstName').textContent = params.get('firstName') || 'N/A';
+    document.getElementById('out-lastName').textContent = params.get('lastName') || 'N/A';
+    document.getElementById('out-email').textContent = params.get('email') || 'N/A';
+    document.getElementById('out-phone').textContent = params.get('phone') || 'N/A';
+    document.getElementById('out-businessName').textContent = params.get('businessName') || 'N/A';
+
+    const level = params.get('membershipLevel');
+    const levels = { np: 'NP Membership', bronze:'Bronze', silver:'Silver', gold:'Gold' };
+    document.getElementById('out-membershipLevel').textContent = levels[level] || 'Not selected';
+
+    const ts = params.get('timestamp');
+    if (ts) {
+      const date = new Date(ts);
+      document.getElementById('out-timestamp').textContent = date.toLocaleString();
+    }

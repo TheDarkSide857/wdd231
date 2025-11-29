@@ -84,6 +84,124 @@ nav a:hover { background:#0069d2; color:white; transform:translateY(-4px); }
   gap: 0.5rem;
 }
 .weather-display { display:flex; align-items:center; gap:1rem; margin:1rem 0; }
+.join-main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.form-container {
+  background: #a6cffd;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+form label {
+  display: block;
+  margin-bottom: 1.2rem;
+  font-weight: bold;
+  color: #223856;
+}
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.4rem;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+form input:focus,
+form select:focus,
+form textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(44,112,190,0.2);
+}
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+.benefit-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlideUp 0.8s ease-out forwards;
+  animation-delay: calc(var(--order) * 0.2s);
+  animation-fill-mode: forwards;
+}
+.benefit-card:nth-child(1) { --order: 1; }
+.benefit-card:nth-child(2) { --order: 2; }
+.benefit-card:nth-child(3) { --order: 3; }
+.benefit-card:nth-child(4) { --order: 4; }
+.benefit-card h3 {
+  color: var(--primary);
+  margin: 0.5rem 0;
+}
+.learn-more {
+  color: var(--primary);
+  font-weight: bold;
+  text-decoration: none;
+}
+.learn-more:hover {
+  text-decoration: underline;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  align-items: center;
+  justify-content: center;
+}
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+  animation: modalPop 0.4s ease;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #aaa;
+}
+.close:hover { color: #000; }
+@keyframes fadeSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes modalPop {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+@media (min-width: 900px) {
+  .join-main {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+  .benefits-section {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
 @media (max-width: 600px) { .temp { font-size: 2.5rem; } }
 @media (max-width:992px){
   .hero { height:250px; }

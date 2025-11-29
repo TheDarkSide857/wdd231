@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biz United USA - Join Us</title>
+  <meta name="author" content="Dallin Stewart">
+  <meta name="description" content="Biz United USA Chamber of Commerce – Connecting businesses in Pacific Grove and across the United States with networking events, member directory, and resources for growth.">
+  <meta property="og:title" content="Biz United USA - Chamber of Commerce">
+  <meta property="og:description" content="Join Biz United USA Chamber of Commerce – Pacific Grove, California. Discover member businesses, upcoming events, and valuable resources designed to help your business thrive in today’s economy.">
+  <meta property="og:url" content="https://thedarkside857.github.io/wdd231/">
+  <meta property="og:image" content="https://thedarkside857.github.io/wdd231/images/sitelogo.webp">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/directory.css">
+  <script src="scripts/directory.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="logo">
+        <img src="images/sitelogo.webp" width="100" alt="Biz United USA">
+        <h1>Biz United USA - <span>Join Us!</span></h1>
+      </div>
+      <nav class="desktop-nav">
+        <a href="https://thedarkside857.github.io/wdd231/index.html">Profile</a>
+        <a href="https://thedarkside857.github.io/wdd231/chamber/directory.html">Directory</a>
+        <a href="#">Join</a>
+        <a href="#">Discover</a>
+      </nav>
+      <button class="mobile-toggle" aria-label="Menu">☰</button>
+    </div>
+    <nav class="mobile-nav"></nav>
+  </header>
+
+  <main class="join-main">
+    <div class="form-container">
+      <h2 class="section-title">Join Biz United USA</h2>
+
+      <form id="membershipForm" action="thankyou.html" method="get" novalidate>
+
+        <input type="hidden" id="timestamp" name="timestamp">
+
+        <label for="firstName">First Name
+          <input type="text" id="firstName" name="firstName" required autocomplete="given-name" title="Enter your first name">
+        </label>
+
+        <label for="lastName">Last Name
+          <input type="text" id="lastName" name="lastName" required autocomplete="family-name" title="Enter your last name">
+        </label>
+
+        <label for="orgTitle">Organizational Title
+          <input type="text" id="orgTitle" name="orgTitle" 
+                 pattern="[A-Za-z\s-]{7,}" 
+                 title="Minimum 7 letters, spaces, or hyphens only" 
+                 autocomplete="organization-title" required>
+        </label>
+
+        <label for="email">Email Address
+          <input type="email" id="email" name="email" required autocomplete="email" 
+                 placeholder="you@example.com" title="Enter your email">
+        </label>
+
+        <label for="phone">Mobile Phone
+          <input type="tel" id="phone" name="phone" required autocomplete="tel" title="Enter your phone number">
+        </label>
+
+        <label for="businessName">Business/Organization Name
+          <input type="text" id="businessName" name="businessName" required autocomplete="organization" title="Your business name">
+        </label>
+
+        <label for="membershipLevel">Membership Level
+          <select id="membershipLevel" name="membershipLevel" required>
+            <option value="" disabled selected>Select a level</option>
+            <option value="np">NP Membership (Non-Profit - Free)</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+          </select>
+        </label>
+
+        <label for="description">Business Description
+          <textarea id="description" name="description" rows="5" title="Describe your business"></textarea>
+        </label>
+
+        <button type="submit" class="btn">Become a Member</button>
+      </form>
+    </div>
+
+    <section class="benefits-section">
+      <h2 class="section-title">Membership Levels & Benefits</h2>
+      <div class="benefits-grid">
+        <div class="benefit-card" data-modal="np-modal">
+          <h3>NP Membership — Free</h3>
+          <p>For registered 501(c)(3) non-profit organizations</p>
+        </div>
+        <div class="benefit-card" data-modal="bronze-modal">
+          <h3>Bronze — $15.00/month</h3>
+          <p>Basic visibility & events</p>
+        </div>
+        <div class="benefit-card" data-modal="silver-modal">
+          <h3>Silver — $32.00/month</h3>
+          <p>Spotlight + discounts</p>
+        </div>
+        <div class="benefit-card" data-modal="gold-modal">
+          <h3>Gold — $72.00/month</h3>
+          <p>Premium advertising & priority</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modals -->
+    <div id="np-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">×</span>
+        <h3>NP Membership (Free)</h3>
+        <ul>
+          <li>Listed in directory</li>
+          <li>Invitation to monthly mixers</li>
+          <li>Community recognition</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="bronze-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">×</span>
+        <h3>Bronze Membership</h3>
+        <ul>
+          <li>Directory listing with logo</li>
+          <li>2 event tickets per year</li>
+          <li>Email newsletter feature (1x)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="silver-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">×</span>
+        <h3>Silver Membership</h3>
+        <ul>
+          <li>Everything in Bronze</li>
+          <li>Homepage spotlight (1 month)</li>
+          <li>10% discount on events</li>
+          <li>Training workshop access</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="gold-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">×</span>
+        <h3>Gold Membership</h3>
+        <ul>
+          <li>Everything in Silver</li>
+          <li>Top banner ad on homepage</li>
+          <li>Free entry to all events</li>
+          <li>Annual keynote speaker slot</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-info">
+        <h4>Biz United USA</h4>
+        <p>1321 Lincoln Avenue<br>Pacific Grove, California</p>
+        <p><a href="mailto:info@bizunitedusa.org">info@bizunitedusa.org</a></p>
+        <p>(831) 601-5459</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+        <a href="https://x.com"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="footer-meta">
+        <p>WDD231 Class Project • Dallin Stewart</p>
+        <p>&copy; <span id="currentyear"></span> Biz United USA</p>
+        <p id="lastModified"></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
