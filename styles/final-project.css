@@ -1,0 +1,60 @@
+:root {
+    --bg: #0f0f1a;          /* Deep space blue-black */
+    --primary: #00ff99;     /* Neon cyan/green (classic arcade feel) */
+    --accent: #ff2e63;      /* Hot pink/red for highlights */
+    --text: #e0e0e0;        /* Light gray for readability */
+    --dark: #080810;        /* Card backgrounds */
+  }
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    padding: 2rem;
+  }
+  header {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    border-bottom: 4px solid var(--primary);
+  }
+  h1, h2, h3 {
+    font-family: 'Press Start 2P', cursive;
+    color: var(--primary);
+    text-shadow: 0 0 10px var(--primary);
+  }
+  h1 { font-size: 2.8rem; margin-bottom: 0.5rem; }
+  h2 { font-size: 1.8rem; margin: 2.5rem 0 1rem; }
+  section {
+    max-width: 1000px;
+    margin: 0 auto 3rem;
+    background: var(--dark);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 2px solid var(--primary);
+    box-shadow: 0 0 20px rgba(0, 255, 153, 0.2);
+  }
+  ul { padding-left: 1.5rem; }
+  strong { color: var(--accent); }
+  .wireframe {
+    background: #111;
+    padding: 1rem;
+    border: 2px dashed var(--primary);
+    text-align: center;
+    margin: 1.5rem 0;
+    font-family: monospace;
+    color: var(--primary);
+    white-space: pre;
+    overflow-x: auto;
+  }
+  footer {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  @media (max-width: 768px) {
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; }
+  }
