@@ -76,32 +76,6 @@ function escapeHtml(text) {
   return div.innerHTML;
 }
 loadMembers();
-const currentTemp = document.querySelector('#current-temp');
-const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
-
-const lat = 36.60297714477723;
-const lon = -121.93294050382472;
-const apiKey = 'cbce0880f8042449729af665c9c94911';
-
-const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`;
-
-async function apiFetch() {
-  try {
-    const response = await fetch(url);
-    if (response.ok) {
-      const data = await response.json();
-      displayResults(data);
-    } else {
-      throw Error(await response.text());
-    }
-  } catch (error) {
-    console.log(error);
-    captionDesc.textContent = 'Unable to load weather';
-  }
-}
-
-apiFetch();
 
 function displayResults(data) {
   currentTemp.innerHTML = `${Math.round(data.main.temp)}&deg;F`;

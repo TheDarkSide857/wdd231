@@ -182,6 +182,149 @@ form textarea:focus {
   color: #aaa;
 }
 .close:hover { color: #000; }
+/* Visit Message */
+.visit-message {
+  background: rgba(249,217,35,0.2);
+  border: 2px solid #f9d923;
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 960px;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* Page Title */
+.page-title {
+  text-align: center;
+  color: var(--primary);
+  margin: 2rem 0 1.5rem;
+}
+
+/* GRID LAYOUT WITH NAMED AREAS */
+.spots-grid {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Small screens (320px – 640px) – one column */
+@media (max-width: 640px) {
+  .spots-grid {
+    grid-template-areas:
+      "card1"
+      "card2"
+      "card3"
+      "card4"
+      "card5"
+      "card6"
+      "card7"
+      "card8";
+  }
+}
+
+/* Medium screens (641px – 1024px) – two columns */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .spots-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "card1 card2"
+      "card3 card4"
+      "card5 card6"
+      "card7 card8";
+  }
+}
+
+/* Large screens (1025px+) – fancy layout */
+@media (min-width: 1025px) {
+  .spots-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "card1 card1 card2 card3"
+      "card4 card5 card6 card3"
+      "card4 card7 card8 card8";
+  }
+}
+
+/* Card Styling */
+.spot-card {
+  background: #223856;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+}
+
+.spot-card figure {
+  margin: 0;
+  overflow: hidden;
+}
+
+.spot-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* Desktop-only hover effect (requirement #12) */
+@media (min-width: 641px) {
+  .spot-card:hover img {
+    transform: scale(1.12);
+    filter: brightness(1.2) contrast(1.1);
+  }
+}
+
+.spot-card .content {
+  padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.spot-card h2 {
+  font-size: 1.4rem;
+  margin: 0 0 .5rem;
+  color: #f9d923;
+}
+
+.spot-card address {
+  font-style: normal;
+  color: #bbb;
+  margin-bottom: .5rem;
+}
+
+.spot-card p {
+  flex-grow: 1;
+  margin: 0 0 1rem;
+  font-size: .95rem;
+}
+
+.spot-card button {
+  align-self: flex-start;
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: .6rem 1.2rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background .3s;
+}
+
+.spot-card button:hover {
+  background: #0056b3;
+}
+
+/* Assign grid areas (these classes are added by JS) */
+.card1 { grid-area: card1; } .card2 { grid-area: card2; }
+.card3 { grid-area: card3; } .card4 { grid-area: card4; }
+.card5 { grid-area: card5; } .card6 { grid-area: card6; }
+.card7 { grid-area: card7; } .card8 { grid-area: card8; }
 @keyframes fadeSlideUp {
   to {
     opacity: 1;

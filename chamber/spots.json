@@ -1,0 +1,58 @@
+[
+    {
+      "name": "Lovers Point Park",
+      "address": "631 Ocean View Blvd, Pacific Grove, CA 93950",
+      "description": "Iconic beach park with stunning views, kayaking, and the famous Lovers Point Beach.",
+      "image": "images/lovers-point.webp",
+      "areaClass": "card1"
+    },
+    {
+      "name": "Asilomar State Beach",
+      "address": "800 Asilomar Blvd, Pacific Grove, CA 93950",
+      "description": "Rugged coastline, tide pools, and boardwalk trails protected by California State Parks.",
+      "image": "images/asilomar.webp",
+      "areaClass": "card2"
+    },
+    {
+      "name": "Monterey Bay Aquarium",
+      "address": "886 Cannery Row, Monterey, CA 93940",
+      "description": "World-famous aquarium featuring sea otters, jellyfish, and the Open Sea exhibit.",
+      "image": "images/aquarium.webp",
+      "areaClass": "card3"
+    },
+    {
+      "name": "Pacific Grove Monarch Sanctuary",
+      "address": "250 Ridge Rd, Pacific Grove, CA 93950",
+      "description": "Winter home to thousands of migrating monarch butterflies – a magical natural phenomenon.",
+      "image": "images/monarchs.webp",
+      "areaClass": "card4"
+    },
+    {
+      "name": "Point Pinos Lighthouse",
+      "address": "90 Asilomar Ave, Pacific Grove, CA 93950",
+      "description": "Oldest continuously operating lighthouse on the West Coast (est. 1855).",
+      "image": "images/lighthouse.webp",
+      "areaClass": "card5"
+    },
+    {
+      "name": "Passionfish",
+      "address": "701 Lighthouse Ave, Pacific Grove, CA 93950",
+      "description": "Award-winning sustainable seafood restaurant with an incredible wine list.",
+      "image": "images/passionfish.webp",
+      "areaClass": "card6"
+    },
+    {
+      "name": "17-Mile Drive Entrance",
+      "address": "Ocean Road Gate, Pacific Grove, CA 93953",
+      "description": "The famous scenic drive through Pebble Beach starts right here in Pacific Grove.",
+      "image": "images/17mile.webp",
+      "areaClass": "card7"
+    },
+    {
+      "name": "Berwick Park & Butterfly Habitat",
+      "address": "500 Asilomar Ave, Pacific Grove, CA 93950",
+      "description": "Peaceful park with native plant gardens designed specifically for monarch butterflies.",
+      "image": "images/berwick.webp",
+      "areaClass": "card8"
+    }
+  ]

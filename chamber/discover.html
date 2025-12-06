@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biz United USA - Join Us</title>
+  <meta name="author" content="Dallin Stewart">
+  <meta name="description" content="Biz United USA Chamber of Commerce – Connecting businesses in Pacific Grove and across the United States with networking events, member directory, and resources for growth.">
+  <meta property="og:title" content="Biz United USA - Chamber of Commerce">
+  <meta property="og:description" content="Join Biz United USA Chamber of Commerce – Pacific Grove, California. Discover member businesses, upcoming events, and valuable resources designed to help your business thrive in today’s economy.">
+  <meta property="og:url" content="https://thedarkside857.github.io/wdd231/">
+  <meta property="og:image" content="https://thedarkside857.github.io/wdd231/images/sitelogo.webp">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/directory.css">
+  <script src="scripts/discover.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="logo">
+        <img src="images/sitelogo.webp" width="100" alt="Biz United USA">
+        <h1>Biz United USA - <span>Join Us!</span></h1>
+      </div>
+      <nav class="desktop-nav">
+        <a href="https://thedarkside857.github.io/wdd231/index.html">Profile</a>
+        <a href="https://thedarkside857.github.io/wdd231/chamber/directory.html">Directory</a>
+        <a href="#">Join</a>
+        <a href="#">Discover</a>
+      </nav>
+      <button class="mobile-toggle" aria-label="Menu">☰</button>
+    </div>
+    <nav class="mobile-nav"></nav>
+  </header>
+
+  <main>
+    <!-- Visit Message -->
+    <div id="visit-message" class="visit-message" aria-live="polite"></div>
+
+    <h2 class="page-title">Discover Pacific Grove</h2>
+
+    <section id="spots-gallery" class="spots-grid">
+      <!-- Cards are injected by discover.js -->
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-info">
+        <h4>Biz United USA</h4>
+        <p>1321 Lincoln Avenue<br>Pacific Grove, California</p>
+        <p><a href="mailto:info@bizunitedusa.org">info@bizunitedusa.org</a></p>
+        <p>(831) 601-5459</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+        <a href="https://x.com"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="footer-meta">
+        <p>WDD231 Class Project • Dallin Stewart</p>
+        <p>&copy; <span id="currentyear"></span> Biz United USA</p>
+        <p id="lastModified"></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
