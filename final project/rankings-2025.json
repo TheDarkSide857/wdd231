@@ -1,0 +1,95 @@
+{
+    "lastUpdated": "2025-12-09T12:00:00Z",
+    "games": [
+      {
+        "title": "Black Myth: Wukong",
+        "developer": "Game Science",
+        "platforms": ["PC", "PS5"],
+        "score": 9.7,
+        "votes": 28492,
+        "oneLiner": "A masterpiece of action RPG combat and Chinese mythology brought to life.",
+        "cover": "images/black-myth-wukong.jpg"
+      },
+      {
+        "title": "Elden Ring: Shadow of the Erdtree",
+        "developer": "FromSoftware",
+        "platforms": ["PC", "PS5", "Xbox"],
+        "score": 9.6,
+        "votes": 31204,
+        "oneLiner": "The DLC that feels like a full sequel. Peak Soulsborne.",
+        "cover": "images/elden-ring-dlc.jpg"
+      },
+      {
+        "title": "Final Fantasy VII Rebirth",
+        "developer": "Square Enix",
+        "platforms": ["PS5"],
+        "score": 9.4,
+        "votes": 26781,
+        "oneLiner": "Emotional storytelling meets jaw-dropping open world exploration.",
+        "cover": "images/ff7-rebirth.jpg"
+      },
+      {
+        "title": "Astro Bot",
+        "developer": "Team Asobi",
+        "platforms": ["PS5"],
+        "score": 9.3,
+        "votes": 18923,
+        "oneLiner": "Pure joy in platformer form. The best 3D platformer in decades.",
+        "cover": "images/astro-bot.jpg"
+      },
+      {
+        "title": "Hades II",
+        "developer": "Supergiant Games",
+        "platforms": ["PC"],
+        "score": 9.2,
+        "votes": 22341,
+        "oneLiner": "Early access and already better than most full releases.",
+        "cover": "images/hades2.jpg"
+      },
+      {
+        "title": "Silent Hill 2 Remake",
+        "developer": "Bloober Team",
+        "platforms": ["PC", "PS5"],
+        "score": 9.1,
+        "votes": 15402,
+        "oneLiner": "A remake that honors the original while feeling fresh.",
+        "cover": "images/sh2-remake.jpg"
+      },
+      {
+        "title": "Dragon's Dogma 2",
+        "developer": "Capcom",
+        "platforms": ["PC", "PS5", "Xbox"],
+        "score": 8.9,
+        "votes": 18765,
+        "oneLiner": "Ambitious, flawed, and utterly unforgettable.",
+        "cover": "images/dragons-dogma-2.jpg"
+      },
+      {
+        "title": "Helldivers 2",
+        "developer": "Arrowhead",
+        "platforms": ["PC", "PS5"],
+        "score": 8.8,
+        "votes": 42391,
+        "oneLiner": "For Super Earth! The best co-op shooter in years.",
+        "cover": "images/helldivers2.jpg"
+      },
+      {
+        "title": "Balatro",
+        "developer": "LocalThunk",
+        "platforms": ["PC", "Switch", "Mobile"],
+        "score": 8.7,
+        "votes": 29871,
+        "oneLiner": "A roguelike deckbuilder that will ruin your sleep schedule.",
+        "cover": "images/balatro.jpg"
+      },
+      {
+        "title": "Metaphor: ReFantazio",
+        "developer": "Studio Zero",
+        "platforms": ["PS5", "Xbox", "PC"],
+        "score": 8.6,
+        "votes": 13210,
+        "oneLiner": "Atlus' best RPG since Persona 5. Absolute fire.",
+        "cover": "images/metaphor.jpg"
+      }
+    ]
+  }

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TheNexus – Contact Us!</title>
+  <meta name="author" content="Dallin Stewart">
+  <meta name="description" content="Contact TheNexus for bug reports, interview requests, collaborations, or just to say hi!">
+  <meta property="og:title" content="TheNexus – Contact Us!">
+  <meta property="og:description" content="Learn about the newest video games that came out this year!">
+  <meta property="og:url" content="https://thedarkside857.github.io/wdd231/">
+  <meta property="og:image" content="https://thedarkside857.github.io/wdd231/images/sitelogo.webp">
+  <link rel="icon" href="images/finalfavicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/final-project.css">
+  <script src="scripts/final-project.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-wrapper">
+      <img src="images/logo.png" alt="The Nexus Logo" class="logo" loading="lazy" />
+      <h1>The Nexus</h1>
+    </div>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="final-project-home.html">Home</a></li>
+        <li><a href="final-project-rankings.html">Rankings</a></li>
+        <li><a href="#">Contact Us!</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="images/hero-contact.jpg" alt="Neon gaming setup" loading="lazy">
+      <div class="hero-text">
+        <h2>Get in Touch</h2>
+        <p>Bug reports • Interview requests • Collabs • Just wanna talk games?</p>
+      </div>
+    </section>
+
+    <section class="review-form">
+      <h2>Send Us a Message 🚀</h2>
+
+      <form id="contactForm" action="final-project-contact-thankyou.html" method="get">
+        <div class="form-section">
+          <label for="name">Your Name / Gamer Tag</label>
+          <input type="text" id="name" name="name" placeholder="e.g., xX_ProGamer_Xx" required>
+        </div>
+
+        <div class="form-section">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@domain.com" required>
+        </div>
+
+        <div class="form-section">
+          <label for="subject">Subject</label>
+          <select id="subject" name="subject">
+            <option value="">Choose one...</option>
+            <option value="General Inquiry">General Inquiry</option>
+            <option value="Review Request">Press / Review Copy Request</option>
+            <option value="Interview">Developer Interview Request</option>
+            <option value="Bug Report">Site Bug / Issue</option>
+            <option value="Collab">Collaboration / Sponsorship</option>
+            <option value="Just Saying Hi">Just Saying Hi 😎</option>
+          </select>
+        </div>
+
+        <div class="form-section">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="8" placeholder="What's on your mind, legend?" required></textarea>
+        </div>
+
+        <div class="form-section">
+          <input type="submit" value="Send Message 💥">
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+        <div class="footer-info">
+            <h4>TheNexus</h4>
+            <p>1321 Lincoln Avenue<br>Pacific Grove, California</p>
+            <p><a href="mailto:info@thenexus.org">info@thenexus.org</a></p>
+            <p>(831) 601-5459</p>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+            <a href="https://x.com"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="footer-meta">
+            <p>WDD231 Final Project</p>
+            <p><span>Dallin Stewart</span></p>
+            <p>&copy; <span id="currentyear"></span> United States</p>
+            <p id="lastModified"></p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

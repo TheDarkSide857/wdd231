@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TheNexus – Home</title>
+  <meta name="author" content="Dallin Stewart">
+  <meta name="description" content="Site plan for TheNexus – a video game hub featuring reviews, news, guides, retrospectives, curated lists, and community discussion.">
+  <meta property="og:title" content="TheNexus – Home">
+  <meta property="og:description" content="Learn about the newest video games that came out this year!">
+  <meta property="og:url" content="https://thedarkside857.github.io/wdd231/">
+  <meta property="og:image" content="https://thedarkside857.github.io/wdd231/images/sitelogo.webp">
+  <link rel="icon" href="images/finalfavicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/final-project.css">
+  <script src="scripts/final-project.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-wrapper">
+      <img src="images/logo.png" alt="The Nexus Logo" class="logo" loading="lazy" />
+      <h1>The Nexus</h1>
+    </div>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="final-project-rankings.html">Rankings</a></li>
+        <li><a href="final-project-contact.html">Contact Us!</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="images/hero.jpg" alt="Featured Game Banner" />
+      <div class="hero-text">
+        <h2>Discover What's Next in Gaming</h2>
+        <p>Explore in-depth reviews, upcoming releases, and more.</p>
+      </div>
+    </section>
+    <section class="features">
+      <article class="card">
+        <h3>Game Reviews</h3>
+        <p>In-depth reviews of the latest AAA and indie games. Our editors provide honest insights on gameplay, story, graphics, and performance.</p>
+      </article>
+      <article class="card">
+        <h3>Upcoming Releases</h3>
+        <p>Stay ahead of the curve with our curated calendar of upcoming game launches. Filter by genre, platform, and studio.</p>
+      </article>
+      <article class="card">
+        <h3>Community Rankings</h3>
+        <p>Vote and view rankings for the top games of the year as chosen by fellow gamers. Real opinions. Real results.</p>
+      </article>
+      <article class="card">
+        <h3>Developer Interviews</h3>
+        <p>Go behind the scenes with exclusive Q&As featuring game developers and artists. Discover the stories behind your favorite titles.</p>
+      </article>
+      <article class="card">
+        <h3>Industry News</h3>
+        <p>Breaking updates from around the gaming world — mergers, announcements, and esports highlights, all in one place.</p>
+      </article>
+      <article class="card">
+        <h3>Opinion & Editorial</h3>
+        <p>Engaging articles from staff and guest writers exploring trends, controversies, and the future of gaming culture.</p>
+      </article>
+    </section>
+    <section class="review-form">
+        <h2>Submit Your Game Review</h2>
+        <form id="reviewForm" action="final-project-home-thankyou.html" method="get">
+          <div class="form-section">
+            <label for="gameTitle">Game Title</label>
+            <input 
+              type="text" 
+              id="gameTitle" 
+              name="game" 
+              placeholder="e.g., Black Myth: Wukong, GTA VI, Hades II..." 
+              required 
+            />
+          </div>
+          <div class="form-section">
+            <label for="platform">Platform Played On</label>
+            <select id="platform" name="platform">
+              <option value="">Select platform...</option>
+              <option value="PC">PC</option>
+              <option value="PlayStation 5">PlayStation 5</option>
+              <option value="Xbox Series X|S">Xbox Series X|S</option>
+              <option value="Nintendo Switch">Nintendo Switch</option>
+              <option value="Mobile">Mobile</option>
+              <option value="Other">Other / Retro</option>
+            </select>
+          </div>
+          <div class="form-section">
+            <label>Overall Rating</label>
+            <div class="star-rating">
+              <input type="radio" id="star5" name="rating" value="5" required /><label for="star5">★</label>
+              <input type="radio" id="star4" name="rating" value="4" /><label for="star4">★</label>
+              <input type="radio" id="star3" name="rating" value="3" /><label for="star3">★</label>
+              <input type="radio" id="star2" name="rating" value="2" /><label for="star2">★</label>
+              <input type="radio" id="star1" name="rating" value="1" /><label for="star1">★</label>
+            </div>
+          </div>
+          <div class="form-section">
+            <label>What did you love? <em>(check all that apply)</em></label>
+            <div class="checkbox-group">
+              <label><input type="checkbox" name="highlights" value="Gameplay"> Epic Gameplay</label>
+              <label><input type="checkbox" name="highlights" value="Story"> Amazing Story</label>
+              <label><input type="checkbox" name="highlights" value="Graphics"> Stunning Graphics</label>
+              <label><input type="checkbox" name="highlights" value="Soundtrack"> God-Tier Soundtrack</label>
+              <label><input type="checkbox" name="highlights" value="Replayability"> Infinite Replayability</label>
+              <label><input type="checkbox" name="highlights" value="Multiplayer"> Insane Multiplayer</label>
+            </div>
+          </div>
+          <div class="form-section">
+            <label for="reviewText">Your Review <span class="optional">(optional but appreciated!)</span></label>
+            <textarea 
+              id="reviewText" 
+              name="review" 
+              rows="6" 
+              placeholder="Spoiler-free thoughts? Rage about microtransactions? Praise the boss design? Let it rip..."></textarea>
+          </div>
+          <div class="form-section">
+            <label for="gamerTag">Your Gamer Tag / Name <span class="optional">(optional)</span></label>
+            <input 
+              type="text" 
+              id="gamerTag" 
+              name="username" 
+              placeholder="xX_DarkSoulSlayer_Xx" 
+            />
+          </div>
+          <div class="form-section">
+            <input type="submit" value="Submit Review 🚀" />
+          </div>
+        </form>
+      </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+        <div class="footer-info">
+            <h4>TheNexus</h4>
+            <p>1321 Lincoln Avenue<br>Pacific Grove, California</p>
+            <p><a href="mailto:info@thenexus.org">info@thenexus.org</a></p>
+            <p>(831) 601-5459</p>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+            <a href="https://x.com"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="footer-meta">
+            <p>WDD231 Final Project</p>
+            <p><span>Dallin Stewart</span></p>
+            <p>&copy; <span id="currentyear"></span> United States</p>
+            <p id="lastModified"></p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
